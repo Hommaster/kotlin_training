@@ -10,7 +10,8 @@ class Activity2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        bindingClass = Activity2Binding.inflate(layoutInflater)
         setContentView(R.layout.activity_2)
-
+        bindingClass.txTest.text = "Hellow Bitch"
     }
 }
