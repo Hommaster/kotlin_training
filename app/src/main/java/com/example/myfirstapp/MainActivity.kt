@@ -1,5 +1,6 @@
 package com.example.myfirstapp
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -60,28 +61,75 @@ class MainActivity : AppCompatActivity() {
 //
 //    }
 
-    lateinit var bindingClass: ActivityMainBinding
-
-    val a:Short = 324
-    val b:Byte = 54
+//    lateinit var bindingClass: ActivityMainBinding
+//
+//    val a:Byte = 90
+//    val b:Byte = 36
+//
+//    var maxPerson:Byte = 90
+//    val currentPerson:Byte = 36
+//
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        bindingClass = ActivityMainBinding.inflate(layoutInflater)
+//        super.onCreate(savedInstanceState)
+//        setContentView(bindingClass.root)
+//
+//        bindingClass.bAdd.setOnClickListener {
+//            val result:Int = a + b
+//            bindingClass.textV.text = "Результат сложения равен: $result"
+//        }
+//        bindingClass.bSub.setOnClickListener {
+//            val result:Int = a - b
+//            bindingClass.textV.text = "Результат вычитания равен: $result"
+//        }
+//        bindingClass.bUm.setOnClickListener {
+//            val result:Int = a * b
+//            bindingClass.textV.text = "Результат умножения равен: $result"
+//        }
+//
+//        bindingClass.bSr.setOnClickListener {
+////            if (maxPerson > currentPerson) bindingClass.txSr.text = "Кол-во людей не превышает требованиям"
+////            else bindingClass.txSr.text = "Кол-во людей превышено!"
+////            bindingClass.txSr.visibility = View.VISIBLE
+//
+////            bindingClass.txSr.text = if (maxPerson > currentPerson) "Все впорядке" else "Превышено кол-во людей!"
+////            bindingClass.txSr.visibility = View.VISIBLE
+//
+//            if (maxPerson > currentPerson) {
+//                bindingClass.txSr.text = "All Good, man"
+//                bindingClass.txSr.setBackgroundColor(Color.GREEN)
+//            }
+//            else {
+//                bindingClass.txSr.text = "Not  good! Your woomen!?"
+//                bindingClass.txSr.setBackgroundColor(Color.RED)
+//            }
+//            bindingClass.txSr.visibility = View.VISIBLE
+//
+////            bindingClass.textView2.text = when(currentPerson) {
+////                in 0..maxPerson -> "All Good"
+////                else -> "Not Good!!"
+////            }
+//
+//            when(maxPerson > currentPerson) {
+//                true -> bindingClass.bSr.setTextColor(Color.GREEN)
+//                else -> bindingClass.bSr.setTextColor(Color.RED)
+//            }
+//
+//            when(currentPerson) {
+//                in 0..maxPerson -> {
+//                    bindingClass.textView2.text = "Колво людей не превышено"
+//                    bindingClass.textView2.setBackgroundColor(Color.GREEN)
+//                }
+//                else -> {
+//                    bindingClass.textView2.text = "Людей больше допустимого значения!!"
+//                    bindingClass.textView2.setBackgroundColor(Color.YELLOW)
+//                }
+//
+//            }
+//        }
+//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        bindingClass = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(bindingClass.root)
-
-        bindingClass.bAdd.setOnClickListener {
-            val result:Int = a + b
-            bindingClass.textV.text = result.toString()
-        }
-        bindingClass.bSub.setOnClickListener {
-            val result:Int = a - b
-            bindingClass.textV.text = result.toString()
-        }
-        bindingClass.bUm.setOnClickListener {
-            val result:Int = a * b
-            bindingClass.textV.text = result.toString()
-        }
-
     }
 }

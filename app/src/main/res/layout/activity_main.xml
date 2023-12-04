@@ -5,47 +5,4 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:ignore="UsingOnClickInXml">
-
-    <Button
-        android:id="@+id/bAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Сложить"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textV"
-        app:layout_constraintStart_toStartOf="@+id/textV"
-        app:layout_constraintTop_toBottomOf="@+id/textV"
-        app:layout_constraintVertical_bias="0.16" />
-
-    <Button
-        android:id="@+id/bSub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Вычесть"
-        app:layout_constraintEnd_toEndOf="@+id/bAdd"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/bAdd"
-        app:layout_constraintTop_toBottomOf="@+id/bAdd" />
-
-    <Button
-        android:id="@+id/bUm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Умножить"
-        app:layout_constraintEnd_toEndOf="@+id/bSub"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/bSub"
-        app:layout_constraintTop_toBottomOf="@+id/bSub" />
-
-    <TextView
-        android:id="@+id/textV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
-        android:text="324 и 54"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    tools:ignore="UsingOnClickInXml"/>
