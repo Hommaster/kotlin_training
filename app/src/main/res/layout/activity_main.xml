@@ -5,4 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:ignore="UsingOnClickInXml"/>
+    tools:ignore="UsingOnClickInXml">
+
+    <TextView
+        android:id="@+id/txText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Введите количество Ваших подписчиков"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Кол-во подписчиков"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/txText1"
+        app:layout_constraintStart_toStartOf="@+id/txText1"
+        app:layout_constraintTop_toBottomOf="@+id/txText1" />
+
+    <TextView
+        android:id="@+id/txResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/edValue"
+        app:layout_constraintStart_toStartOf="@+id/edValue"
+        app:layout_constraintTop_toBottomOf="@+id/edValue" />
+
+    <Button
+        android:id="@+id/bResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Результат"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txResult"
+        app:layout_constraintStart_toStartOf="@+id/txResult" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
