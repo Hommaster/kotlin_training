@@ -131,9 +131,41 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var bindingClass:ActivityMainBinding
 
+    val little:Int = 500
+    val malo:Int = 1000
+    val middle:Int = 10000
+    val senior:Int = 100000
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bindingClass = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bindingClass.root)
+        bindingClass.bResult.setOnClickListener {
+
+            val result:Int = bindingClass.edValue.text.toString().toInt()
+
+            bindingClass.txResult.visibility = View.VISIBLE
+
+            when(result) {
+                in 0..little -> {
+                    bindingClass.txResult.setTextColor(Color.RED)
+                    bindingClass.txResult.text = "Нулевый"
+                }
+                in little..malo -> {
+                    bindingClass.txResult.setTextColor(Color.YELLOW)
+                    bindingClass.txResult.text = "Мало подписчиков"
+                }
+                in malo..middle -> {
+                    bindingClass.txResult.setTextColor(Color.GREEN)
+                    bindingClass.txResult.text = "Сойдет для начала"
+                }
+                in middle..senior -> {
+                    bindingClass.txResult.text = "А ты хорош"
+                    bindingClass.txResult.setTextColor(Color.BLUE)
+                }
+
+            }
+        }
     }
 }
