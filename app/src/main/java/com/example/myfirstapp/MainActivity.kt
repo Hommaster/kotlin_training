@@ -3,10 +3,7 @@ package com.example.myfirstapp
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.View
-import android.widget.Button
-import android.widget.TextView
 import com.example.myfirstapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -143,29 +140,57 @@ class MainActivity : AppCompatActivity() {
         setContentView(bindingClass.root)
         bindingClass.bResult.setOnClickListener {
 
-            val result:Int = bindingClass.edValue.text.toString().toInt()
+//            val result:Int = bindingClass.edValue.text.toString().toInt()
+//
+//            bindingClass.txResult.visibility = View.VISIBLE
+//
+//            when(result) {
+//                in 0..little -> {
+//                    bindingClass.txResult.setTextColor(Color.RED)
+//                    bindingClass.txResult.text = "Нулевый"
+//                }
+//                in little..malo -> {
+//                    bindingClass.txResult.setTextColor(Color.YELLOW)
+//                    bindingClass.txResult.text = "Мало подписчиков"
+//                }
+//                in malo..middle -> {
+//                    bindingClass.txResult.setTextColor(Color.GREEN)
+//                    bindingClass.txResult.text = "Сойдет для начала"
+//                }
+//                in middle..senior -> {
+//                    bindingClass.txResult.text = "А ты хорош"
+//                    bindingClass.txResult.setTextColor(Color.BLUE)
+//                }
+
+            val resultName = bindingClass.edValue.text.toString()
 
             bindingClass.txResult.visibility = View.VISIBLE
 
-            when(result) {
-                in 0..little -> {
-                    bindingClass.txResult.setTextColor(Color.RED)
-                    bindingClass.txResult.text = "Нулевый"
+            when(resultName) {
+                Constance.Dvornik -> {
+                    val tempText = "Получите ваши ${Constance.DvornikSalary}"
+                    bindingClass.txResult.text = tempText
                 }
-                in little..malo -> {
-                    bindingClass.txResult.setTextColor(Color.YELLOW)
-                    bindingClass.txResult.text = "Мало подписчиков"
+                Constance.Enginier -> {
+                    val tempText = "Получите ваши ${Constance.EnginierSalary}"
+                    bindingClass.txResult.text = tempText
                 }
-                in malo..middle -> {
-                    bindingClass.txResult.setTextColor(Color.GREEN)
-                    bindingClass.txResult.text = "Сойдет для начала"
+                Constance.Director -> {
+                    val tempText = "Получите ваши ${Constance.DirectorSalary}"
+                    bindingClass.txResult.text = tempText
                 }
-                in middle..senior -> {
-                    bindingClass.txResult.text = "А ты хорош"
-                    bindingClass.txResult.setTextColor(Color.BLUE)
-                }
+                else -> bindingClass.txResult.text = "Работник не найден в базе данных"
+            }
 
             }
         }
+    object Constance{
+        const val DvornikSalary:Int = 1000
+        const val EnginierSalary:Int = 10000
+        const val DirectorSalary:Int = 100000
+
+        const val Director = "Nikita"
+        const val Enginier = "Egor"
+        const val Dvornik = "Andrey"
     }
-}
+    }
