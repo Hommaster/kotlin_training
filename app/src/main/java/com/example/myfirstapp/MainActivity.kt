@@ -1,9 +1,9 @@
 package com.example.myfirstapp
 
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.myfirstapp.constance.Constance
 import com.example.myfirstapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -164,33 +164,41 @@ class MainActivity : AppCompatActivity() {
 
             val resultName = bindingClass.edValue.text.toString()
 
+            val resultPassword:Int = bindingClass.edValuePassword.text.toString().toInt()
+
             bindingClass.txResult.visibility = View.VISIBLE
 
             when(resultName) {
                 Constance.Dvornik -> {
                     val tempText = "Получите ваши ${Constance.DvornikSalary}"
-                    bindingClass.txResult.text = tempText
+                    if(resultPassword == Constance.Dvornik_Password) {
+                        bindingClass.txResult.text = tempText
+                    }
+                    else {
+                        bindingClass.txResult.text = "Неверно введен пароль"
+                    }
                 }
                 Constance.Enginier -> {
                     val tempText = "Получите ваши ${Constance.EnginierSalary}"
-                    bindingClass.txResult.text = tempText
+                    if(resultPassword == Constance.Enginier_Password) {
+                        bindingClass.txResult.text = tempText
+                    }
+                    else {
+                        bindingClass.txResult.text = "Неверно введен пароль"
+                    }
                 }
                 Constance.Director -> {
                     val tempText = "Получите ваши ${Constance.DirectorSalary}"
-                    bindingClass.txResult.text = tempText
+                    if(resultPassword == Constance.Diresctor_Password) {
+                        bindingClass.txResult.text = tempText
+                    }
+                    else {
+                        bindingClass.txResult.text = "Неверно введен пароль"
+                    }
                 }
                 else -> bindingClass.txResult.text = "Работник не найден в базе данных"
             }
 
             }
         }
-    object Constance{
-        const val DvornikSalary:Int = 1000
-        const val EnginierSalary:Int = 10000
-        const val DirectorSalary:Int = 100000
-
-        const val Director = "Nikita"
-        const val Enginier = "Egor"
-        const val Dvornik = "Andrey"
-    }
     }

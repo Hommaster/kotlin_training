@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
-        android:text="Введите количество Ваших подписчиков"
+        android:text="Введите свое имя и пароль!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,11 +21,12 @@
         android:id="@+id/edValue"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
-        android:hint="Кол-во подписчиков"
-        android:inputType="number"
+        android:hint="Ваше имя"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="@+id/txText1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/txText1"
         app:layout_constraintTop_toBottomOf="@+id/txText1" />
 
@@ -33,12 +34,11 @@
         android:id="@+id/txResult"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:gravity="center"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/edValue"
         app:layout_constraintStart_toStartOf="@+id/edValue"
-        app:layout_constraintTop_toBottomOf="@+id/edValue" />
+        app:layout_constraintTop_toBottomOf="@+id/edValuePassword" />
 
     <Button
         android:id="@+id/bResult"
@@ -49,5 +49,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/edValue"
         app:layout_constraintStart_toStartOf="@+id/edValue" />
+
+    <EditText
+        android:id="@+id/edValuePassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:hint="Ваш пароль"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/txText1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txText1"
+        app:layout_constraintTop_toBottomOf="@+id/txText1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
