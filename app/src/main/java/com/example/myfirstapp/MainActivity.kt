@@ -137,7 +137,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         bindingClass = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bindingClass.root)
-        bindingClass.bResult.setOnClickListener {
 
 //            val result:Int = bindingClass.edValue.text.toString().toInt()
 //
@@ -208,6 +207,5 @@ class MainActivity : AppCompatActivity() {
 //            }
 //
 //            }
-        }
     }
 }
