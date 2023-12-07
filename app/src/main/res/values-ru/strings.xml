@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">МоёПервоеПриложение</string>
+    <string name="enter_your_name_and_password">Введите ваше имя или пароль</string>
+    <string name="your_name">Ваше имя</string>
+    <string name="result">Результат</string>
+    <string name="your_password">Ваш пароль</string>
+    <string name="hello">Привет</string>
+</resources>

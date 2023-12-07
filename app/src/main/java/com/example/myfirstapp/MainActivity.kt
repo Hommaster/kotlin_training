@@ -126,12 +126,12 @@ class MainActivity : AppCompatActivity() {
 //        }
 //    }
 
-    lateinit var bindingClass:ActivityMainBinding
+    lateinit var bindingClass: ActivityMainBinding
 
-    val little:Int = 500
-    val malo:Int = 1000
-    val middle:Int = 10000
-    val senior:Int = 100000
+//    val little:Int = 500
+//    val malo:Int = 1000
+//    val middle:Int = 10000
+//    val senior:Int = 100000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -161,52 +161,53 @@ class MainActivity : AppCompatActivity() {
 //                    bindingClass.txResult.setTextColor(Color.BLUE)
 //                }
 
-            val resultName = bindingClass.edValue.text.toString()
-
-            val resultPassword:Int = bindingClass.edValuePassword.text.toString().toInt()
-
-            bindingClass.txResult.visibility = View.VISIBLE
-
-            when(resultName) {
-                Constance.Dvornik -> {
-                    val tempText = "Получите ваши ${Constance.DvornikSalary}"
-                    if(resultPassword == Constance.Dvornik_Password) {
-                        bindingClass.txResult.text = tempText
-                        bindingClass.imageIcon.setImageResource(Constance.Dvornik_Image.toInt())
-                    }
-                    else {
-                        bindingClass.txResult.text = "Неверно введен пароль"
-                        bindingClass.imageIcon.setImageResource(R.drawable.fortune)
-                    }
-                    bindingClass.imageIcon.visibility = View.VISIBLE
-                }
-                Constance.Enginier -> {
-                    val tempText = "Получите ваши ${Constance.EnginierSalary}"
-                    if(resultPassword == Constance.Enginier_Password) {
-                        bindingClass.txResult.text = tempText
-                        bindingClass.imageIcon.setImageResource(Constance.Enginier_Image.toInt())
-                    }
-                    else {
-                        bindingClass.txResult.text = "Неверно введен пароль"
-                        bindingClass.imageIcon.setImageResource(R.drawable.fortune)
-                    }
-                    bindingClass.imageIcon.visibility = View.VISIBLE
-                }
-                Constance.Director -> {
-                    val tempText = "Получите ваши ${Constance.DirectorSalary}"
-                    if(resultPassword == Constance.Diresctor_Password) {
-                        bindingClass.txResult.text = tempText
-                        bindingClass.imageIcon.setImageResource(Constance.Director_Image.toInt())
-                    }
-                    else {
-                        bindingClass.txResult.text = "Неверно введен пароль"
-                        bindingClass.imageIcon.setImageResource(R.drawable.fortune)
-                    }
-                    bindingClass.imageIcon.visibility = View.VISIBLE
-                }
-                else -> bindingClass.txResult.text = "Работник не найден в базе данных"
-            }
-
-            }
+//            val resultName = bindingClass.edValue.text.toString()
+//
+//            val resultPassword:Int = bindingClass.edValuePassword.text.toString().toInt()
+//
+//            bindingClass.txResult.visibility = View.VISIBLE
+//
+//            when(resultName) {
+//                Constance.Dvornik -> {
+//                    val tempText = "Получите ваши ${Constance.DvornikSalary}"
+//                    if(resultPassword == Constance.Dvornik_Password) {
+//                        bindingClass.txResult.text = tempText
+//                        bindingClass.imageIcon.setImageResource(Constance.Dvornik_Image.toInt())
+//                    }
+//                    else {
+//                        bindingClass.txResult.text = "Неверно введен пароль"
+//                        bindingClass.imageIcon.setImageResource(R.drawable.fortune)
+//                    }
+//                    bindingClass.imageIcon.visibility = View.VISIBLE
+//                }
+//                Constance.Enginier -> {
+//                    val tempText = "Получите ваши ${Constance.EnginierSalary}"
+//                    if(resultPassword == Constance.Enginier_Password) {
+//                        bindingClass.txResult.text = tempText
+//                        bindingClass.imageIcon.setImageResource(Constance.Enginier_Image.toInt())
+//                    }
+//                    else {
+//                        bindingClass.txResult.text = "Неверно введен пароль"
+//                        bindingClass.imageIcon.setImageResource(R.drawable.fortune)
+//                    }
+//                    bindingClass.imageIcon.visibility = View.VISIBLE
+//                }
+//                Constance.Director -> {
+//                    val tempText = "Получите ваши ${Constance.DirectorSalary}"
+//                    if(resultPassword == Constance.Diresctor_Password) {
+//                        bindingClass.txResult.text = tempText
+//                        bindingClass.imageIcon.setImageResource(Constance.Director_Image.toInt())
+//                    }
+//                    else {
+//                        bindingClass.txResult.text = "Неверно введен пароль"
+//                        bindingClass.imageIcon.setImageResource(R.drawable.fortune)
+//                    }
+//                    bindingClass.imageIcon.visibility = View.VISIBLE
+//                }
+//                else -> bindingClass.txResult.text = "Работник не найден в базе данных"
+//            }
+//
+//            }
         }
     }
+}

@@ -9,71 +9,12 @@
     tools:ignore="UsingOnClickInXml">
 
     <TextView
-        android:id="@+id/txText1"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:text="Введите свое имя и пароль!"
+        android:text="@string/hello"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edValue"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:ems="10"
-        android:hint="Ваше имя"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="@+id/txText1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txText1"
-        app:layout_constraintTop_toBottomOf="@+id/txText1" />
-
-    <TextView
-        android:id="@+id/txResult"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="@+id/edValue"
-        app:layout_constraintStart_toStartOf="@+id/edValue"
-        app:layout_constraintTop_toBottomOf="@+id/edValuePassword" />
-
-    <Button
-        android:id="@+id/bResult"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Результат"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edValue"
-        app:layout_constraintStart_toStartOf="@+id/edValue" />
-
-    <EditText
-        android:id="@+id/edValuePassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:ems="10"
-        android:hint="Ваш пароль"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="@+id/txText1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txText1"
-        app:layout_constraintTop_toBottomOf="@+id/txText1" />
-
-    <ImageView
-        android:id="@+id/imageIcon"
-        android:layout_width="240dp"
-        android:layout_height="171dp"
-        android:layout_marginTop="60dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="@+id/edValuePassword"
-        app:layout_constraintStart_toStartOf="@+id/edValuePassword"
-        app:layout_constraintTop_toBottomOf="@+id/edValuePassword"
-        app:srcCompat="@android:drawable/alert_light_frame" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

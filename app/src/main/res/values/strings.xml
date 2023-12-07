@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">MyFirstApp</string>
-    <string name="test_text">test_text</string>
-    <string name="click_here">Click here</string>
-    <string name="Button">Не нажимай кнопку!!</string>
+    <string name="enter_your_name_and_password">Enter your name and password</string>
+    <string name="your_name">Your name</string>
+    <string name="result">Result</string>
+    <string name="your_password">Your password</string>
+    <string name="ok" translatable="false">Ok</string>
+    <string name="hello">Hello</string>
 </resources>
