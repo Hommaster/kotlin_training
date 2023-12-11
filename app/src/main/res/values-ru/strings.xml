@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">МоёПервоеПриложение</string>
-    <string name="enter_your_name_and_password">Введите ваше имя или пароль</string>
-    <string name="your_name">Ваше имя</string>
-    <string name="result">Результат</string>
-    <string name="your_password">Ваш пароль</string>
-    <string name="hello">Привет</string>
+    <string name="text_1_test_activity">ТестовоеАктивити</string>
+    <string name="text_1_main_activity">ГлавноеАктивити</string>
+    <string name="text_1_test_activity_2">ТестовоеАктвити2</string>
+    <string name="button_1_main_activity">ТествоеАквтивити</string>
+    <string name="button_2_main_activity">ТестовоеАктивити2</string>
 </resources>

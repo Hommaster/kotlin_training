@@ -208,4 +208,12 @@ class MainActivity : AppCompatActivity() {
 //
 //            }
     }
+
+    fun onClickGoTestActivity1(view : View) {
+
+    }
+
+    fun onClickGoTestActivity2(view : View) {
+
+    }
 }
