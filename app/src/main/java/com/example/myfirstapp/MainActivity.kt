@@ -215,8 +215,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun onClickGoTestActivity2(view : View) {
-        val intent = Intent(this, TestActivity2::class.java)
-        startActivity(intent)
+    fun onClickClose(view: View) {
+        finish()
     }
+
 }

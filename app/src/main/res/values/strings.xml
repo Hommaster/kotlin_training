@@ -4,5 +4,7 @@
     <string name="text_1_main_activity">MainActivity</string>
     <string name="text_1_test_activity_2">TextActivity2</string>
     <string name="button_1_main_activity">TestActivity1</string>
-    <string name="button_2_main_activity">TestActivity2</string>
+    <string name="button_1_test_activity_1">TestActivity2</string>
+    <string name="button_1_test_activity_2">MainActivity</string>
+    <string name="button_2_main_activity">Close</string>
 </resources>

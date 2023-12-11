@@ -4,5 +4,7 @@
     <string name="text_1_main_activity">ГлавноеАктивити</string>
     <string name="text_1_test_activity_2">ТестовоеАктвити2</string>
     <string name="button_1_main_activity">ТествоеАквтивити</string>
-    <string name="button_2_main_activity">ТестовоеАктивити2</string>
+    <string name="button_1_test_activity_1">ТестовоеАктивити2</string>
+    <string name="button_1_test_activity_2">ГлавноеАктивити</string>
+    <string name="button_2_main_activity">Закрыть</string>
 </resources>
