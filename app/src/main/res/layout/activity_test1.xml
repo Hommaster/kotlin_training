@@ -4,17 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="clickGoTestActivity2"
     tools:context=".TestActivity1">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_1_TS2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onClickGoTestActivity2"
         android:text="@string/text_1_test_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button"
@@ -25,6 +28,6 @@
         android:text="@string/button_1_test_activity_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/text_1_TS2"
         tools:ignore="UsingOnClickInXml" />
 </androidx.constraintlayout.widget.ConstraintLayout>

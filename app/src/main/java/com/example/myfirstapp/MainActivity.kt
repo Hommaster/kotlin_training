@@ -210,13 +210,10 @@ class MainActivity : AppCompatActivity() {
 //            }
     }
 
-    fun onClickGoTestActivity1(view : View) {
+    fun onClickGoTestActivity1(view: View) {
         val intent = Intent(this, TestActivity1::class.java)
+        intent.putExtra("key main_activity", "Good man, good!")
         startActivity(intent)
-    }
-
-    fun onClickClose(view: View) {
-        finish()
     }
 
 }

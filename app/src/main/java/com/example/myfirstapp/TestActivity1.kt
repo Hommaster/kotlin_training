@@ -14,6 +14,8 @@ class TestActivity1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         bindingClass = ActivityTest1Binding.inflate(layoutInflater)
         setContentView(bindingClass.root)
+
+        bindingClass.text1TS2.text = intent.getStringExtra("key main_activity")
     }
 
     fun onClickGoTestActivity2(view: View) {
