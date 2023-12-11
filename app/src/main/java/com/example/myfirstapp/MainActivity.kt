@@ -1,5 +1,6 @@
 package com.example.myfirstapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -210,10 +211,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickGoTestActivity1(view : View) {
-
+        val intent = Intent(this, TestActivity1::class.java)
+        startActivity(intent)
     }
 
     fun onClickGoTestActivity2(view : View) {
-
+        val intent = Intent(this, TestActivity2::class.java)
+        startActivity(intent)
     }
 }
