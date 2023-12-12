@@ -13,6 +13,16 @@
         android:theme="@style/Theme.MyFirstApp"
         tools:targetApi="34">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.MyFirstApp" />
+        <activity
+            android:name=".MainActivity0"
+            android:exported="false"
+            android:label="@string/title_activity_main0"
+            android:theme="@style/Theme.MyFirstApp" />
+        <activity
             android:name=".TestActivity1"
             android:exported="false" />
         <activity
