@@ -7,6 +7,7 @@ import android.view.View
 import com.example.myfirstapp.constance.Constance
 import com.example.myfirstapp.databinding.ActivityMainBinding
 
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
 //    var counter1:Byte = 127
@@ -210,10 +211,22 @@ class MainActivity : AppCompatActivity() {
 //            }
     }
 
+    @Deprecated("Deprecated in Java")
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        bindingClass.textName.visibility = View.VISIBLE
+        if(requestCode == 101 && data != null) {
+            bindingClass.textName.text = data.getStringExtra("Name_from_TS1")
+        }
+        else {
+            bindingClass.textName.text = "GG"
+        }
+    }
+
     fun onClickGoTestActivity1(view: View) {
         val intent = Intent(this, TestActivity1::class.java)
         intent.putExtra("key main_activity", "Good man, good!")
-        startActivity(intent)
+        startActivityForResult(intent, 101)
     }
 
 }

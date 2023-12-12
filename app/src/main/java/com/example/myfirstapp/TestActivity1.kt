@@ -22,4 +22,11 @@ class TestActivity1 : AppCompatActivity() {
         val intent = Intent(this, TestActivity2::class.java)
         startActivity(intent)
     }
+
+    fun onClickBackToMainActivity(view: View) {
+        intent.putExtra("Name_from_TS1", bindingClass.editName.text.toString())
+        setResult(RESULT_OK, intent)
+        finish()
+    }
+
 }

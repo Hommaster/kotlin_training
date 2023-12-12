@@ -7,4 +7,6 @@
     <string name="button_1_test_activity_1">TestActivity2</string>
     <string name="button_1_test_activity_2">MainActivity</string>
     <string name="button_2_main_activity">Close</string>
+    <string name="label_1_TA1">What you name?</string>
+    <string name="button_2_test_activity_1">Back with result</string>
 </resources>
