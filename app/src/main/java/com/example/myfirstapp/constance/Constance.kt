@@ -3,19 +3,9 @@ package com.example.myfirstapp.constance
 import com.example.myfirstapp.R
 
 object Constance {
-    const val DvornikSalary:Int = 1000
-    const val EnginierSalary:Int = 10000
-    const val DirectorSalary:Int = 100000
-
-    const val Director = "Nikita"
-    const val Enginier = "Egor"
-    const val Dvornik = "Andrey"
-
-    const val Diresctor_Password = 4565
-    const val Enginier_Password = 1234
-    const val Dvornik_Password = 5676
-
-    val Director_Image = R.drawable.nikita
-    val Enginier_Image = R.drawable.egor
-    val Dvornik_Image = R.drawable.andrey
+    const val SIGN_STATE = "sign_state"
+    const val SIGN_STATE_IN = "sign_in"
+    const val SIGN_STATE_UP = "sign_up"
+    const val REQUEST_CODE_SIGN_IN = 1212
+    const val REQUEST_CODE_SIGN_UP = 2121
 }
