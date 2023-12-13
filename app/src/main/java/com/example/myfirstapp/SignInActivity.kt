@@ -18,23 +18,20 @@ class SignInActivity : AppCompatActivity() {
 
         signState = intent.getStringExtra(Constance.SIGN_STATE)!!
 
-        if(signState == Constance.SIGN_STATE_IN) {
+        if (signState == Constance.SIGN_STATE_IN) {
 
             bindingClass.labelName.visibility = View.GONE
             bindingClass.labelSurname.visibility = View.GONE
             bindingClass.labelSurname2.visibility = View.GONE
 
-        }
-        else if(signState == Constance.SIGN_STATE_UP) {
+        } else if (signState == Constance.SIGN_STATE_UP) {
 
         }
     }
 
     fun onClickDone(view: View) {
-        if(signState == Constance.SIGN_STATE_IN) {
-            bindingClass.labelName.visibility = View.GONE
-            bindingClass.labelSurname.visibility = View.GONE
-            bindingClass.labelSurname2.visibility = View.GONE
+        if (signState == Constance.SIGN_STATE_UP) {
+
         }
     }
 }

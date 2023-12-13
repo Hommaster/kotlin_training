@@ -12,6 +12,12 @@ class MainActivity2 : AppCompatActivity() {
 
     lateinit var bindingClass: MainActivityBinding
 
+    private var login = "empty"
+    private var password = "empty"
+    private var name = "empty"
+    private var surname = "empty"
+    private var surname2 = "empty"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bindingClass = MainActivityBinding.inflate(layoutInflater)
