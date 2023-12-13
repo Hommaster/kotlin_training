@@ -1,5 +1,6 @@
 package com.example.myfirstapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -31,7 +32,21 @@ class SignInActivity : AppCompatActivity() {
 
     fun onClickDone(view: View) {
         if (signState == Constance.SIGN_STATE_UP) {
-
+            val intent = Intent()
+            intent.putExtra(Constance.LOGIN, bindingClass.labelLogin.text.toString())
+            intent.putExtra(Constance.PASSWORD, bindingClass.labelPassword.text.toString())
+            intent.putExtra(Constance.NAME, bindingClass.labelName.text.toString())
+            intent.putExtra(Constance.SURNAME, bindingClass.labelSurname.text.toString())
+            intent.putExtra(Constance.SURNAME2, bindingClass.labelSurname2.text.toString())
+            setResult(RESULT_OK, intent)
+            finish()
+        }
+        else if(signState == Constance.SIGN_STATE_IN) {
+            val intent = Intent()
+            intent.putExtra(Constance.LOGIN, bindingClass.labelLogin.text.toString())
+            intent.putExtra(Constance.PASSWORD, bindingClass.labelPassword.text.toString())
+            setResult(RESULT_OK, intent)
+            finish()
         }
     }
 }

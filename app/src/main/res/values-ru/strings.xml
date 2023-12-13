@@ -8,4 +8,6 @@
     <string name="label_3_reg">Пароль</string>
     <string name="label_4_reg">Фамилия</string>
     <string name="label_5_reg">Отчество</string>
+    <string name="not_found_user">Такой пользователь не найден, пожалуйста, зарегестрируйтесь</string>
+    <string name="b_1_main_logout">Выйти</string>
 </resources>

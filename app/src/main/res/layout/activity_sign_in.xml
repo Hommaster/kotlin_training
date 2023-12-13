@@ -82,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:onClick="onClickReg"
+        android:onClick="onClickDone"
         android:text="@string/b_3_reg"
         app:layout_constraintEnd_toEndOf="@+id/label_surname2"
         app:layout_constraintHorizontal_bias="0.515"

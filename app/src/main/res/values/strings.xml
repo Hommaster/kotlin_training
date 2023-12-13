@@ -8,5 +8,7 @@
     <string name="label_3_reg">Password</string>
     <string name="label_4_reg">Surname</string>
     <string name="label_5_reg">Surname2</string>
+    <string name="not_found_user">This user not found! Pls try registrate</string>
+    <string name="b_1_main_logout">LogOut</string>
 
 </resources>
