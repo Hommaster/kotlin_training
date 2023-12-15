@@ -1,14 +1,4 @@
 <resources>
     <string name="app_name">MyFirstApp</string>
-    <string name="b_1_main">Registrate</string>
-    <string name="b_2_main">sign in</string>
-    <string name="b_3_reg">Done</string>
-    <string name="label_1_reg">Name</string>
-    <string name="label_2_reg">Login</string>
-    <string name="label_3_reg">Password</string>
-    <string name="label_4_reg">Surname</string>
-    <string name="label_5_reg">Surname2</string>
-    <string name="not_found_user">This user not found! Pls try registrate</string>
-    <string name="b_1_main_logout">LogOut</string>
 
 </resources>

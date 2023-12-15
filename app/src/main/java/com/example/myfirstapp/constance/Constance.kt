@@ -1,6 +1,5 @@
 package com.example.myfirstapp.constance
 
-import com.example.myfirstapp.R
 
 object Constance {
     const val SIGN_STATE = "sign_state"

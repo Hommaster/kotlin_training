@@ -1,13 +1,3 @@
 <resources>
     <string name="app_name">МоёПервоеПриложение</string>
-    <string name="b_1_main">Регистрация</string>
-    <string name="b_2_main">Вход</string>
-    <string name="b_3_reg">Подтвердить</string>
-    <string name="label_1_reg">Имя</string>
-    <string name="label_2_reg">Логин</string>
-    <string name="label_3_reg">Пароль</string>
-    <string name="label_4_reg">Фамилия</string>
-    <string name="label_5_reg">Отчество</string>
-    <string name="not_found_user">Такой пользователь не найден, пожалуйста, зарегестрируйтесь</string>
-    <string name="b_1_main_logout">Выйти</string>
 </resources>
