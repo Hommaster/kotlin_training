@@ -2,54 +2,31 @@ package com.example.myfirstapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main2)
 
-        val numbers: Array<Int> = arrayOf(1, 2, 3, 4, 5)
-        val n = numbers[1]  // получаем второй элемент  n=2
-        numbers[1] = 2
+        val arrayFruits = listOf<String>("apple", "mango", "orange")
 
+        for(index in 0..2) {
+            Log.d("My Log", "Index ${arrayFruits[index]}")
+        }
 
-        val numbers1 = arrayOf(4, 9, 2, "array")
-        var number1 = numbers1[3]
-        numbers1[0] = 123
+        for(index in arrayFruits.indices) {
+            Log.d("My log2", "Fruit ${arrayFruits[index]}")
+        }
 
-        val numbers2 = IntArray(7)
-        val numbers3 = arrayOf(0, 0, 0, 0, 0, 0, 0)
+        for((index, item) in arrayFruits.withIndex()) {
+            Log.d("My log3", "Index $index | Item $item")
+        }
 
-        val numbers4 = arrayOfNulls<Int>(5)
+        for(index in 10 downTo 4){
+            Log.d("My log4", "Index $index")
+        }
 
-        var numbers5 = emptyArray<String>()
-
-        numbers.reverse()
-        val reverseNumbers = numbers.reversedArray()
-
-        numbers.sort()
-        val sortedNumbers = numbers.sortedArray()
-
-        numbers.sortDescending()
-        val sortedDescending = numbers.sortedArrayDescending()
-
-        numbers.shuffle()
-
-        val numbersList = listOf(4, 5, 6, 7)
-        numbersList.sorted()
-        numbersList.sortedDescending()
-        numbersList.reversed()
-        numbersList.shuffled()
-        numbersList[0]
-        numbersList[numbersList.size - 2]
-
-        val numbersArrayList = arrayListOf(4, 5, 6, 7, 8, 9)
-        numbersArrayList.removeAt(1)
-        numbersArrayList[numbersArrayList.size - 1]
-        numbersArrayList.add(67)
-        numbersArrayList.clear()
-        numbersArrayList.addAll(numbers) //add list
-        numbersArrayList.addAll(numbers2.toList()) //add array
 
 
     }
